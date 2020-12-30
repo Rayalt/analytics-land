@@ -6,16 +6,19 @@
 	width: 100%;
 	&__first {
 		height: 800px;
-		background: lightgreen;
-		transform: skewY(-5deg);
+		background: var(--dark-blue);
+		//transform: skewY(-5deg);
+		border-bottom: 100px solid var(--body-bg);
+ 		border-left: 100vw solid transparent;
 	}
 	&__second {
 		height: 500px;
-		background: lightskyblue;
 	}
 	&__third {
 		height: 800px;
-		background: lightpink;
-		transform: skewY(-5deg);
+		background: var(--dark-blue);
+		//transform: skewY(-5deg);
+		border-top: 100px solid var(--body-bg);
+ 		border-right: 100vw solid transparent;
 	}
 }
