@@ -15,10 +15,7 @@
 		}
 	}
 	&_even &__item {
-		
-		@media (min-width: $screen-sm) {
-			flex-direction: row-reverse;
-		}
+		flex-direction: row-reverse;
 	}
 	&_even &__item &__img {
 		margin: 0 100px 0 0;
@@ -35,10 +32,6 @@
 	&__item {
 		display: flex;
 		align-items: center;
-		flex-direction: column;
-		@media (min-width: $screen-sm) {
-			flex-direction: row;
-		}
 	}
 	&__col {
 		width: 480px;
@@ -50,13 +43,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 288px;
-		height: 197px;
-		@media (min-width: $screen-sm) {
-			width: 600px;
-			height: 410px;
-		}
-
+		width: 600px;
+		height: 410px;
 	}
 	&__heading {
 		@include heading;

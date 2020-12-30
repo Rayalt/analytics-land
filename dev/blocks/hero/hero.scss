@@ -44,10 +44,6 @@
 		}
 	}
 	&__img {
-		display: none;
-		@media (min-width: $screen-sm) {
-			display: block;
-		}
 	}
 	&__content {
 		margin: 78px 0 0 50px;
@@ -63,10 +59,8 @@
 		font-weight: 700;
 		font-size: 26px;
 		line-height: 30px;
-		@media (min-width: $screen-sm) {
-			font-size: 50px;
-			line-height: 60px;
-		}
+		font-size: 50px;
+		line-height: 60px;
 	}
 	&__descr {
 		font-weight: 400;

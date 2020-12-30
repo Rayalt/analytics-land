@@ -1,21 +1,13 @@
 @mixin heading {
 	font-weight: 700;
 	margin: 0;
-	line-height: 112%;
-	font-size: 20px;
-	@media (min-width: $screen-sm) {
-		font-size: 40px;
-		line-height: 47px;
-	}
+	font-size: 40px;
+	line-height: 47px;
 }
 @mixin descr {
-	line-height: 150%;
 	color: var(--text-secondary);
-	font-size: 12px;
-	@media (min-width: $screen-sm) {
-		font-size: 18px;
-		line-height: 27px;
-	}
+	font-size: 18px;
+	line-height: 27px;
 }
 @mixin content-gap-small {
 	display: grid;
