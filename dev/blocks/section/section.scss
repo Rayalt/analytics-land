@@ -7,9 +7,14 @@
 	&__first {
 		height: 800px;
 		background: var(--dark-blue);
-		//transform: skewY(-5deg);
-		border-bottom: 100px solid var(--body-bg);
- 		border-left: 100vw solid transparent;
+		border-bottom: 40px solid var(--body-bg);
+		border-left: 100vw solid transparent;
+		@media (min-width: $screen-sm) {
+			border-bottom: 60px solid var(--body-bg);
+		}
+		@media (min-width: $screen-md) {
+			border-bottom: 100px solid var(--body-bg);
+		}
 	}
 	&__second {
 		height: 500px;
@@ -17,8 +22,13 @@
 	&__third {
 		height: 800px;
 		background: var(--dark-blue);
-		//transform: skewY(-5deg);
-		border-top: 100px solid var(--body-bg);
- 		border-right: 100vw solid transparent;
+		border-top: 40px solid var(--body-bg);
+		border-right: 100vw solid transparent;
+		@media (min-width: $screen-sm) {
+			border-top: 60px solid var(--body-bg);
+		}
+		@media (min-width: $screen-md) {
+			border-top: 100px solid var(--body-bg);
+		}
 	}
 }
