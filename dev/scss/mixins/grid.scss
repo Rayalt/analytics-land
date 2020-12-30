@@ -2,15 +2,11 @@ $screen-xs: 0 !default;
 $screen-sm: 768px !default;
 $screen-md: 1024px !default;
 $screen-lg: 1280px !default;
-$screen-xl: 1400px !default;
-$screen-xxl: 1800px !default;
 
 $container-xs: 100% !default;
 $container-sm: 720px !default;
 $container-md: 980px !default;
 $container-lg: 1200px !default;
-$container-xl: 1344px !default;
-$container-xxl: 1792px !default;
 
 $grid-columns: 12 !default;
 $grid-gutter-width: 20px !default;
@@ -19,9 +15,7 @@ $grid-gutter-width: 20px !default;
     $xs-grid-gutter: $grid-gutter-width,
     $sm-grid-gutter: $grid-gutter-width,
     $md-grid-gutter: $grid-gutter-width,
-    $lg-grid-gutter: $grid-gutter-width,
-    $xl-grid-gutter: $grid-gutter-width,
-    $xxl-grid-gutter: $grid-gutter-width
+    $lg-grid-gutter: $grid-gutter-width
 ) {
     display: block;
     margin-left: auto;
@@ -59,32 +53,13 @@ $grid-gutter-width: 20px !default;
             padding-right: ($lg-grid-gutter / 2);
         }
     }
-
-    @media(min-width: $screen-xl) {
-        width: $container-xl;
-
-        @if ($xl-grid-gutter != $lg-grid-gutter) {
-            padding-left: ($xl-grid-gutter / 2);
-            padding-right: ($xl-grid-gutter / 2);
-        }
-    }
-    @media(min-width: $screen-xxl) {
-        width: $container-xxl;
-
-        @if ($xxl-grid-gutter != $xl-grid-gutter) {
-            padding-left: ($xxl-grid-gutter / 2);
-            padding-right: ($xxl-grid-gutter / 2);
-        }
-    }
 }
 
 @mixin row (
     $xs-grid-gutter: $grid-gutter-width,
     $sm-grid-gutter: $grid-gutter-width,
     $md-grid-gutter: $grid-gutter-width,
-    $lg-grid-gutter: $grid-gutter-width,
-    $xl-grid-gutter: $grid-gutter-width,
-    $xxl-grid-gutter: $grid-gutter-width
+    $lg-grid-gutter: $grid-gutter-width
 ) {
     display: flex;
     flex-wrap: wrap;
@@ -119,21 +94,6 @@ $grid-gutter-width: 20px !default;
         @media(min-width: $screen-lg) {
             margin-left: ($lg-grid-gutter / -2);
             margin-right: ($lg-grid-gutter / -2);
-        }
-    }
-
-    @if ($xl-grid-gutter != $lg-grid-gutter) {
-
-        @media(min-width: $screen-xl) {
-            margin-left: ($xl-grid-gutter / -2);
-            margin-right: ($xl-grid-gutter / -2);
-        }
-    }
-    @if ($xxl-grid-gutter != $xl-grid-gutter) {
-
-        @media(min-width: $screen-xxl) {
-            margin-left: ($xxl-grid-gutter / -2);
-            margin-right: ($xxl-grid-gutter / -2);
         }
     }
 }
@@ -187,19 +147,6 @@ $grid-gutter-width: 20px !default;
             @include make-col($column, $columns, $gutter);
         }
     }
-
-    @if ($screen == xl) {
-
-        @media (min-width: $screen-xl) {
-            @include make-col($column, $columns, $gutter);
-        }
-    }
-    @if ($screen == xxl) {
-
-        @media (min-width: $screen-xxl) {
-            @include make-col($column, $columns, $gutter);
-        }
-    }
 }
 
 @mixin col-offset (
@@ -231,19 +178,6 @@ $grid-gutter-width: 20px !default;
             margin-left: ($column * 100% / $columns);
         }
     }
-
-    @if ($screen == xl) {
-
-        @media (min-width: $screen-xl) {
-            margin-left: ($column * 100% / $columns);
-        }
-    }
-    @if ($screen == xxl) {
-
-        @media (min-width: $screen-xxl) {
-            margin-left: ($column * 100% / $columns);
-        }
-    }
 }
 
 @mixin display (
@@ -270,16 +204,6 @@ $grid-gutter-width: 20px !default;
             display: $display;
         }
     }
-    @if ($screen == xl) {
-        @media (min-width: $screen-xl) {
-            display: $display;
-        }
-    }
-    @if ($screen == xxl) {
-        @media (min-width: $screen-xxl) {
-            display: $display;
-        }
-    }
 }
 
 @mixin col-order (
@@ -303,16 +227,6 @@ $grid-gutter-width: 20px !default;
     }
     @if ($screen == lg) {
         @media (min-width: $screen-lg) {
-            order: $order;
-        }
-    }
-    @if ($screen == xl) {
-        @media (min-width: $screen-xl) {
-            order: $order;
-        }
-    }
-    @if ($screen == xxl) {
-        @media (min-width: $screen-xxl) {
             order: $order;
         }
     }

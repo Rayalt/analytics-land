@@ -29,8 +29,8 @@
 		//z-index: -40;
 		background: var(--dark-blue);
 		&_skew {
-			height: 254px;
-			transform: translateY(calc(100vh - 154px)) rotate(180deg);
+			//height: 254px;
+			transform: translateY(calc(100vh - 10px)) rotate(180deg);
 		}
 		&_logo-right {
 			//background: url('/img/img__bg_logo.png') no-repeat right bottom;

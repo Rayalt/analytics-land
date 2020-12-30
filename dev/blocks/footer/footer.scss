@@ -24,7 +24,8 @@
 		width: 100%;
 		background: var(--dark-blue);
 		&_skew {
-			height: 254px;
+			//height: 254px;
+			width: 100vw;
 			transform: translateY(calc(100vh - 972px));
 		}
 		&_logo {
