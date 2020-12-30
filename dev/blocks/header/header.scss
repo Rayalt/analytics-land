@@ -1,0 +1,38 @@
+// В этом файле должны быть стили для БЭМ-блока header, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.header {
+	width: 100%;
+	z-index: 99;
+	position: absolute;
+	&__row {
+		padding: 50px 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+		height: 40px;
+		width: 184px;
+	}
+	&__nav {
+		display: flex;
+		margin: 0 0 0 82px;
+	}
+	&__item {
+		@include nav-item;
+	}
+	&__login {
+		display: flex;
+	}
+	&__btn {
+		& + & {
+			margin: 0 0 0 40px;
+		}
+	}
+	&__col {
+		display: flex;
+		align-items: center;
+	}
+}

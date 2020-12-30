@@ -1,0 +1,36 @@
+// В этом файле должны быть стили для БЭМ-блока main-features, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-features {
+	text-align: center;
+	padding: 135px 0 0 0;
+	&__col {
+		padding: 80px 0 0 0;
+	}
+	&__content {
+		max-width: 1060px;
+		margin: 0 auto;
+		@include content-gap-large;
+	}
+	&__heading {
+		@include heading;
+	}
+	&__icon {
+		width: 60px;
+		height: 60px;
+	}
+	&__title {
+		margin: 26px 0 0 0;
+	}
+	&__descr {
+		margin: 0;
+		line-height: 22px;
+		@include descr;
+	}
+	&__text {
+		margin: 15px 0 0 0;
+		line-height: 22px;
+		@include descr;
+	}
+}

@@ -1,0 +1,66 @@
+// В этом файле должны быть стили для БЭМ-блока cards, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.cards {
+	&__title {
+		font-size: 30px;
+		line-height: 35px;
+		font-weight: 700;
+	}
+	&__subtitle {
+		line-height: 27px;
+		margin: 10px 0 0 0;
+		color: var(--text-secondary);
+	}
+	&__prise {
+		font-size: 60px;
+		line-height: 70px;
+		font-weight: 700;
+		margin: 66px 0 0 0;
+		position: relative;
+		&:first-letter {
+			font-size: 30px;
+		}
+		&::before {
+			height: 1px;
+			content: '';
+			position: absolute;
+			width: 220px;
+			left: -60px;
+			top: -28px;
+			background: var(--card-line);
+		}
+	}
+	&__prise-sign {
+		font-size: 16px;
+		line-height: 22px;
+		margin: 0 0 40px 0;
+		color: var(--text-secondary);
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		padding: 50px 0 70px 0;
+		border-radius: 30px;
+		width: 340px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&:nth-of-type(odd) {
+			background: var(--card-dark);
+			box-shadow: 0 15px 45px var(--light-shadow);
+		}
+		&:nth-of-type(even) {
+			background: var(--color-white);
+			color: var(--color-typography);
+			box-shadow: 0 15px 45px var(--heavy-shadow);
+		}
+	}
+	&__btn {
+		width: 206px;
+	}
+}

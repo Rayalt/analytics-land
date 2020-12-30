@@ -1,0 +1,22 @@
+// В этом файле должны быть стили для БЭМ-блока page, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+	font-size: 18px;
+	&__header {
+		flex: 0 0 auto;
+	}
+	&__body {
+		flex: 1 1 auto;
+		position: relative;
+	}
+	&__footer {
+		flex: 0 0 auto;
+	}
+}

@@ -1,0 +1,95 @@
+// В этом файле должны быть стили для БЭМ-блока footer, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.footer {
+	min-height: 100vh;
+	position: relative;
+	color: var(--color-typography-inverse);
+	&__inner {
+		padding: 44px 0 103px 0;
+		height: 100%;
+	}
+	&__bg {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+	}
+	&__layer {
+		height: 100%;
+		position: absolute;
+		width: 100%;
+		background: var(--dark-blue);
+		&_skew {
+			height: 254px;
+			transform: translateY(calc(100vh - 972px));
+		}
+		&_logo {
+			background: url('/img/img__bg_footer-logo.png') no-repeat right bottom;
+		}
+	}
+	&__content {
+		@include content-gap-large;
+		text-align: center;
+	}
+	&__heading {
+		@include heading;
+	}
+	&__descr {
+		@include descr;
+		max-width: 1000px;
+		margin: 0 auto;
+		color: var(--text-secondary);
+	}
+	&__cards {
+		margin: 80px 0 0 0;
+	}
+	&__nav {
+		display: flex;
+	}
+	&__item {
+		@include nav-item;
+	}
+	&__socials {
+		display: grid;
+		grid-gap: 40px;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	&__socials-link {
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__socials-icon {
+		width: 40px;
+		height: 40px;
+		fill: var(--text-secondary);
+		transition: fill .5s ease;
+		&:hover {
+			fill: var(--color-white);
+		}
+	}
+	&__logo {
+		height: 40px;
+		width: 184px;
+	}
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 164px 0 0 0;
+		&::before {
+			height: 1px;
+			content: '';
+			position: absolute;
+			width: calc(1200px - 30px);
+			bottom: 196px;
+			background: var(--card-line);
+		}
+	}
+}

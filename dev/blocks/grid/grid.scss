@@ -1,0 +1,535 @@
+// В этом файле должны быть стили для БЭМ-блока setka, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.grid {
+    @include container();
+    &__row {
+        @include row();
+    }
+
+    &__col {
+        @include col();
+        &_xs-1 {
+            @include col(xs, 1, $grid-columns, 32px);
+        }
+        &_xs-2 {
+            @include col(xs, 2, $grid-columns, 32px);
+        }
+        &_xs-3 {
+            @include col(xs, 3, $grid-columns, 32px);
+        }
+        &_xs-4 {
+            @include col(xs, 4, $grid-columns, 32px);
+        }
+        &_xs-5 {
+            @include col(xs, 5, $grid-columns, 32px);
+        }
+        &_xs-6 {
+            @include col(xs, 6, $grid-columns, 32px);
+        }
+        &_xs-7 {
+            @include col(xs, 7, $grid-columns, 32px);
+        }
+        &_xs-8 {
+            @include col(xs, 8, $grid-columns, 32px);
+        }
+        &_xs-9 {
+            @include col(xs, 9, $grid-columns, 32px);
+        }
+        &_xs-10 {
+            @include col(xs, 10, $grid-columns, 32px);
+        }
+        &_xs-11 {
+            @include col(xs, 11, $grid-columns, 32px);
+        }
+        &_xs-12 {
+            @include col(xs, 12, $grid-columns, 32px);
+        }
+
+        &_sm-1 {
+            @include col(sm, 1, $grid-columns, 32px);
+        }
+        &_sm-2 {
+            @include col(sm, 2, $grid-columns, 32px);
+        }
+        &_sm-3 {
+            @include col(sm, 3, $grid-columns, 32px);
+        }
+        &_sm-4 {
+            @include col(sm, 4, $grid-columns, 32px);
+        }
+        &_sm-5 {
+            @include col(sm, 5, $grid-columns, 32px);
+        }
+        &_sm-6 {
+            @include col(sm, 6, $grid-columns, 32px);
+        }
+        &_sm-7 {
+            @include col(sm, 7, $grid-columns, 32px);
+        }
+        &_sm-8 {
+            @include col(sm, 8, $grid-columns, 32px);
+        }
+        &_sm-9 {
+            @include col(sm, 9, $grid-columns, 32px);
+        }
+        &_sm-10 {
+            @include col(sm, 10, $grid-columns, 32px);
+        }
+        &_sm-11 {
+            @include col(sm, 11, $grid-columns, 32px);
+        }
+        &_sm-12 {
+            @include col(sm, 12, $grid-columns, 32px);
+        }
+
+        &_md-1 {
+            @include col(md, 1, $grid-columns, 32px);
+        }
+        &_md-2 {
+            @include col(md, 2, $grid-columns, 32px);
+        }
+        &_md-3 {
+            @include col(md, 3, $grid-columns, 32px);
+        }
+        &_md-4 {
+            @include col(md, 4, $grid-columns, 32px);
+        }
+        &_md-5 {
+            @include col(md, 5, $grid-columns, 32px);
+        }
+        &_md-6 {
+            @include col(md, 6, $grid-columns, 32px);
+        }
+        &_md-7 {
+            @include col(md, 7, $grid-columns, 32px);
+        }
+        &_md-8 {
+            @include col(md, 8, $grid-columns, 32px);
+        }
+        &_md-9 {
+            @include col(md, 9, $grid-columns, 32px);
+        }
+        &_md-10 {
+            @include col(md, 10, $grid-columns, 32px);
+        }
+        &_md-11 {
+            @include col(md, 11, $grid-columns, 32px);
+        }
+        &_md-12 {
+            @include col(md, 12, $grid-columns, 32px);
+        }
+
+        &_lg-1 {
+            @include col(lg, 1, $grid-columns, 32px);
+        }
+        &_lg-2 {
+            @include col(lg, 2, $grid-columns, 32px);
+        }
+        &_lg-3 {
+            @include col(lg, 3, $grid-columns, 32px);
+        }
+        &_lg-4 {
+            @include col(lg, 4, $grid-columns, 32px);
+        }
+        &_lg-5 {
+            @include col(lg, 5, $grid-columns, 32px);
+        }
+        &_lg-6 {
+            @include col(lg, 6, $grid-columns, 32px);
+        }
+        &_lg-7 {
+            @include col(lg, 7, $grid-columns, 32px);
+        }
+        &_lg-8 {
+            @include col(lg, 8, $grid-columns, 32px);
+        }
+        &_lg-9 {
+            @include col(lg, 9, $grid-columns, 32px);
+        }
+        &_lg-10 {
+            @include col(lg, 10, $grid-columns, 32px);
+        }
+        &_lg-11 {
+            @include col(lg, 11, $grid-columns, 32px);
+        }
+        &_lg-12 {
+            @include col(lg, 12, $grid-columns, 32px);
+        }
+
+        &_xl-1 {
+            @include col(xl, 1, $grid-columns, 32px);
+        }
+        &_xl-2 {
+            @include col(xl, 2, $grid-columns, 32px);
+        }
+        &_xl-3 {
+            @include col(xl, 3, $grid-columns, 32px);
+        }
+        &_xl-4 {
+            @include col(xl, 4, $grid-columns, 32px);
+        }
+        &_xl-5 {
+            @include col(xl, 5, $grid-columns, 32px);
+        }
+        &_xl-6 {
+            @include col(xl, 6, $grid-columns, 32px);
+        }
+        &_xl-7 {
+            @include col(xl, 7, $grid-columns, 32px);
+        }
+        &_xl-8 {
+            @include col(xl, 8, $grid-columns, 32px);
+        }
+        &_xl-9 {
+            @include col(xl, 9, $grid-columns, 32px);
+        }
+        &_xl-10 {
+            @include col(xl, 10, $grid-columns, 32px);
+        }
+        &_xl-11 {
+            @include col(xl, 11, $grid-columns, 32px);
+        }
+        &_xl-12 {
+            @include col(xl, 12, $grid-columns, 32px);
+        }
+
+        &_xxl-1 {
+            @include col(xxl, 1, $grid-columns, 32px);
+        }
+        &_xxl-2 {
+            @include col(xxl, 2, $grid-columns, 32px);
+        }
+        &_xxl-3 {
+            @include col(xxl, 3, $grid-columns, 32px);
+        }
+        &_xxl-4 {
+            @include col(xxl, 4, $grid-columns, 32px);
+        }
+        &_xxl-5 {
+            @include col(xxl, 5, $grid-columns, 32px);
+        }
+        &_xxl-6 {
+            @include col(xxl, 6, $grid-columns, 32px);
+        }
+        &_xxl-7 {
+            @include col(xxl, 7, $grid-columns, 32px);
+        }
+        &_xxl-8 {
+            @include col(xxl, 8, $grid-columns, 32px);
+        }
+        &_xxl-9 {
+            @include col(xxl, 9, $grid-columns, 32px);
+        }
+        &_xxl-10 {
+            @include col(xxl, 10, $grid-columns, 32px);
+        }
+        &_xxl-11 {
+            @include col(xxl, 11, $grid-columns, 32px);
+        }
+        &_xxl-12 {
+            @include col(xxl, 12, $grid-columns, 32px);
+        }
+    }
+}
+
+.col-offset {
+    &__xs-1 {
+        @include col-offset(xs, 1, $grid-columns);
+    }
+    &__xs-2 {
+        @include col-offset(xs, 2, $grid-columns);
+    }
+    &__xs-3 {
+        @include col-offset(xs, 3, $grid-columns);
+    }
+    &__xs-4 {
+        @include col-offset(xs, 4, $grid-columns);
+    }
+    &__xs-5 {
+        @include col-offset(xs, 5, $grid-columns);
+    }
+    &__xs-6 {
+        @include col-offset(xs, 6, $grid-columns);
+    }
+    &__xs-7 {
+        @include col-offset(xs, 7, $grid-columns);
+    }
+    &__xs-8 {
+        @include col-offset(xs, 8, $grid-columns);
+    }
+    &__xs-9 {
+        @include col-offset(xs, 9, $grid-columns);
+    }
+    &__xs-10 {
+        @include col-offset(xs, 10, $grid-columns);
+    }
+    &__xs-11 {
+        @include col-offset(xs, 11, $grid-columns);
+    }
+    &__xs-12 {
+        @include col-offset(xs, 12, $grid-columns);
+    }
+
+    &__sm-1 {
+        @include col-offset(sm, 1, $grid-columns);
+    }
+    &__sm-2 {
+        @include col-offset(sm, 2, $grid-columns);
+    }
+    &__sm-3 {
+        @include col-offset(sm, 3, $grid-columns);
+    }
+    &__sm-4 {
+        @include col-offset(sm, 4, $grid-columns);
+    }
+    &__sm-5 {
+        @include col-offset(sm, 5, $grid-columns);
+    }
+    &__sm-6 {
+        @include col-offset(sm, 6, $grid-columns);
+    }
+    &__sm-7 {
+        @include col-offset(sm, 7, $grid-columns);
+    }
+    &__sm-8 {
+        @include col-offset(sm, 8, $grid-columns);
+    }
+    &__sm-9 {
+        @include col-offset(sm, 9, $grid-columns);
+    }
+    &__sm-10 {
+        @include col-offset(sm, 10, $grid-columns);
+    }
+    &__sm-11 {
+        @include col-offset(sm, 11, $grid-columns);
+    }
+    &__sm-12 {
+        @include col-offset(sm, 12, $grid-columns);
+    }
+
+    &__md-1 {
+        @include col-offset(md, 1, $grid-columns);
+    }
+    &__md-2 {
+        @include col-offset(md, 2, $grid-columns);
+    }
+    &__md-3 {
+        @include col-offset(md, 3, $grid-columns);
+    }
+    &__md-4 {
+        @include col-offset(md, 4, $grid-columns);
+    }
+    &__md-5 {
+        @include col-offset(md, 5, $grid-columns);
+    }
+    &__md-6 {
+        @include col-offset(md, 6, $grid-columns);
+    }
+    &__md-7 {
+        @include col-offset(md, 7, $grid-columns);
+    }
+    &__md-8 {
+        @include col-offset(md, 8, $grid-columns);
+    }
+    &__md-9 {
+        @include col-offset(md, 9, $grid-columns);
+    }
+    &__md-10 {
+        @include col-offset(md, 10, $grid-columns);
+    }
+    &__md-11 {
+        @include col-offset(md, 11, $grid-columns);
+    }
+    &__md-12 {
+        @include col-offset(md, 12, $grid-columns);
+    }
+
+    &__lg-1 {
+        @include col-offset(lg, 1, $grid-columns);
+    }
+    &__lg-2 {
+        @include col-offset(lg, 2, $grid-columns);
+    }
+    &__lg-3 {
+        @include col-offset(lg, 3, $grid-columns);
+    }
+    &__lg-4 {
+        @include col-offset(lg, 4, $grid-columns);
+    }
+    &__lg-5 {
+        @include col-offset(lg, 5, $grid-columns);
+    }
+    &__lg-6 {
+        @include col-offset(lg, 6, $grid-columns);
+    }
+    &__lg-7 {
+        @include col-offset(lg, 7, $grid-columns);
+    }
+    &__lg-8 {
+        @include col-offset(lg, 8, $grid-columns);
+    }
+    &__lg-9 {
+        @include col-offset(lg, 9, $grid-columns);
+    }
+    &__lg-10 {
+        @include col-offset(lg, 10, $grid-columns);
+    }
+    &__lg-11 {
+        @include col-offset(lg, 11, $grid-columns);
+    }
+    &__lg-12 {
+        @include col-offset(lg, 12, $grid-columns);
+    }
+
+    &__xl-1 {
+        @include col-offset(xl, 1, $grid-columns);
+    }
+    &__xl-2 {
+        @include col-offset(xl, 2, $grid-columns);
+    }
+    &__xl-3 {
+        @include col-offset(xl, 3, $grid-columns);
+    }
+    &__xl-4 {
+        @include col-offset(xl, 4, $grid-columns);
+    }
+    &__xl-5 {
+        @include col-offset(xl, 5, $grid-columns);
+    }
+    &__xl-6 {
+        @include col-offset(xl, 6, $grid-columns);
+    }
+    &__xl-7 {
+        @include col-offset(xl, 7, $grid-columns);
+    }
+    &__xl-8 {
+        @include col-offset(xl, 8, $grid-columns);
+    }
+    &__xl-9 {
+        @include col-offset(xl, 9, $grid-columns);
+    }
+    &__xl-10 {
+        @include col-offset(xl, 10, $grid-columns);
+    }
+    &__xl-11 {
+        @include col-offset(xl, 11, $grid-columns);
+    }
+    &__xl-12 {
+        @include col-offset(xl, 12, $grid-columns);
+    }
+
+    &__xxl-1 {
+        @include col-offset(xxl, 1, $grid-columns);
+    }
+    &__xxl-2 {
+        @include col-offset(xxl, 2, $grid-columns);
+    }
+    &__xxl-3 {
+        @include col-offset(xxl, 3, $grid-columns);
+    }
+    &__xxl-4 {
+        @include col-offset(xxl, 4, $grid-columns);
+    }
+    &__xxl-5 {
+        @include col-offset(xxl, 5, $grid-columns);
+    }
+    &__xxl-6 {
+        @include col-offset(xxl, 6, $grid-columns);
+    }
+    &__xxl-7 {
+        @include col-offset(xxl, 7, $grid-columns);
+    }
+    &__xxl-8 {
+        @include col-offset(xxl, 8, $grid-columns);
+    }
+    &__xxl-9 {
+        @include col-offset(xxl, 9, $grid-columns);
+    }
+    &__xxl-10 {
+        @include col-offset(xxl, 10, $grid-columns);
+    }
+    &__xxl-11 {
+        @include col-offset(xxl, 11, $grid-columns);
+    }
+    &__xxl-12 {
+        @include col-offset(xxl, 12, $grid-columns);
+    }
+}
+
+.col-order {
+    &__xs-1 {
+        @include col-order(xs, 1);
+    }
+    &__xs-2 {
+        @include col-order(xs, 2);
+    }
+    &__xs-3 {
+        @include col-order(xs, 3);
+    }
+    &__xs-4 {
+        @include col-order(xs, 4);
+    }
+    &__xs-5 {
+        @include col-order(xs, 5);
+    }
+    &__xs-6 {
+        @include col-order(xs, 6);
+    }
+    &__xs-7 {
+        @include col-order(xs, 7);
+    }
+    &__xs-8 {
+        @include col-order(xs, 8);
+    }
+    &__xs-9 {
+        @include col-order(xs, 9);
+    }
+    &__xs-10 {
+        @include col-order(xs, 10);
+    }
+    &__xs-11 {
+        @include col-order(xs, 11);
+    }
+    &__xs-12 {
+        @include col-order(xs, 12);
+    }
+
+    &__sm-1 {
+        @include col-order(sm, 1);
+    }
+    &__sm-2 {
+        @include col-order(sm, 2);
+    }
+    &__sm-3 {
+        @include col-order(sm, 3);
+    }
+    &__sm-4 {
+        @include col-order(sm, 4);
+    }
+    &__sm-5 {
+        @include col-order(sm, 5);
+    }
+    &__sm-6 {
+        @include col-order(sm, 6);
+    }
+    &__sm-7 {
+        @include col-order(sm, 7);
+    }
+    &__sm-8 {
+        @include col-order(sm, 8);
+    }
+    &__sm-9 {
+        @include col-order(sm, 9);
+    }
+    &__sm-10 {
+        @include col-order(sm, 10);
+    }
+    &__sm-11 {
+        @include col-order(sm, 11);
+    }
+    &__sm-12 {
+        @include col-order(sm, 12);
+    }
+}

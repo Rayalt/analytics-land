@@ -1,0 +1,33 @@
+:root {
+	--font-family-base:				var(--font-family-sans);
+	--font-family-sans:				'Roboto', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	--font-family-serif:			serif, 'Times New Roman', Times;
+
+	--color-typography:				#172755;
+    --color-typography-inverse:		#ffffff;
+    
+	--color-white:					#ffffff;
+	--color-semi-white:				rgba(255, 255, 255, .5);
+	--color-semi-black:				rgba(0, 0, 0, 0.5);
+    --accent-color:					#fbd784;
+
+	--body-bg:						#eeeef6;
+	--body-color:					#000000;
+
+	--font-size-base:				  1rem;
+	--font-size-root:				  null;
+
+	--font-weight-base:				  var(--font-weight-normal);
+	--line-height-base:				  1;
+	--nav-padding: 					  calc((100vw - 904px) / 2);
+
+	--dark-blue:					  #172755;
+	--text-secondary:				  #8794ba;
+	--color-pink:					  #ef2a82;
+	--color-lightgrey:				  #eeeef6;
+	--color-blue:					  #0088f0;
+	--light-shadow:					    rgba(#192a59, .2);
+	--heavy-shadow:					  #060f28;
+	--card-line:					  #d3d9e9;
+	--card-dark:					  #0f1f4b;
+}
