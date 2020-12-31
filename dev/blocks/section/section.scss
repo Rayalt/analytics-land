@@ -3,18 +3,11 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .section {
-	width: 100%;
+	position: relative;
 	&__first {
 		height: 800px;
 		background: var(--dark-blue);
-		border-bottom: 40px solid var(--body-bg);
-		border-left: 100vw solid transparent;
-		@media (min-width: $screen-sm) {
-			border-bottom: 60px solid var(--body-bg);
-		}
-		@media (min-width: $screen-md) {
-			border-bottom: 100px solid var(--body-bg);
-		}
+		overflow: hidden;
 	}
 	&__second {
 		height: 500px;
@@ -22,13 +15,20 @@
 	&__third {
 		height: 800px;
 		background: var(--dark-blue);
-		border-top: 40px solid var(--body-bg);
-		border-right: 100vw solid transparent;
-		@media (min-width: $screen-sm) {
-			border-top: 60px solid var(--body-bg);
+		overflow: hidden;
+		padding: 424px 0 0 0;
+	}
+	&__layer {
+		display: block;
+		position: absolute;
+		width: 3008px;
+		height: 424px;
+		&_hero {
+			bottom: 0;
+			transform: rotate(180deg);
 		}
-		@media (min-width: $screen-md) {
-			border-top: 100px solid var(--body-bg);
+		&_footer {
+			top: 0;
 		}
 	}
 }
