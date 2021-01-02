@@ -4,10 +4,11 @@
 
 .section {
 	position: relative;
+	overflow: hidden;
 	&__first {
 		height: 800px;
 		background: var(--dark-blue);
-		overflow: hidden;
+		padding: 0 0 424px 0;
 	}
 	&__second {
 		height: 500px;
@@ -15,8 +16,8 @@
 	&__third {
 		height: 800px;
 		background: var(--dark-blue);
-		overflow: hidden;
 		padding: 424px 0 0 0;
+		
 	}
 	&__layer {
 		display: block;
@@ -25,10 +26,18 @@
 		height: 424px;
 		&_hero {
 			bottom: 0;
-			transform: rotate(180deg);
+			transform: translateX(-50%) rotate(180deg);
+			left: 50%;
 		}
 		&_footer {
 			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
 		}
+	}
+	&__content {
+		position: relative;
+		color: aliceblue;
+		z-index: 2;
 	}
 }
