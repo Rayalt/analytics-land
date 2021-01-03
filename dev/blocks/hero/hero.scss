@@ -51,48 +51,48 @@
 		position: absolute;
 		&_top {
 			top: -34px;
-			left: -20px;
+			left: calc((100vw - 425px) / 2);
 			width: 134px;
 			height: 134px;
 			@media (min-width: $screen-sm) {
 				width: 318px;
 				height: 318px;
 				top: -58px;
-				left: -50px;
+				left: calc((100vw - 925px) / 2);
 			}
 			@media (min-width: $screen-md) {
 				width: 422px;
 				height: 422px;
-				right: -64px;
+				left: calc((100vw - 1225px) / 2);
 				top: -74px;
 			}
 			@media (min-width: $screen-lg) {
 				width: 660px;
 				height: 660px;
-				right: -100px;
+				left: calc((100vw - 1785px) / 2);
 				top: -261px;
 			}
 		}
 		&_bottom {
 			top: 20px;
-			right: -72px;
+			right: calc((100vw - 475px) / 2);
 			width: 290px;
 			height: 290px;
 			@media (min-width: $screen-sm) {
 				width: 692px;
 				height: 692px;
-				right: -166px;
+				right: calc((100vw - 1075px) / 2);
 				top: 72px;
 			}
 			@media (min-width: $screen-md) {
 				width: 920px;
 				height: 920px;
-				right: -230px;
+				right: calc((100vw - 1500px) / 2);
 			}
 			@media (min-width: $screen-lg) {
 				width: 1338px;
 				height: 1338px;
-				right: -520px;
+				right: calc((100vw - 2100px) / 2);
 				top: -38px;
 			}
 		}
@@ -107,37 +107,38 @@
 			display: block;
 		}
 		&_back {
-			right: -105px;
 			width: 418px;
 			height: 288px;
 			top: 98px;
+			right: calc((100vw - 975px) / 2);
 			@media (min-width: $screen-md) {
 				top: 129px;
 				width: 612px;
 				height: 421px;
-				right: -276px;
+				right: calc((100vw - 1565px) / 2);
 			}
 			@media (min-width: $screen-lg) {
 				width: 804px;
 				height: 554px;
 				top: 164px;
+				right: calc((100vw - 1830px) / 2);
 			}
 		}
 		&_front {
 			width: 187px;
 			height: 128px;
-			right: 160px;
+			right: calc((100vw - 420px) / 2);
 			top: 180px;
 			@media (min-width: $screen-md) {
 				top: 243px;
-				right: 114px;
+				right: calc((100vw - 780px) / 2);
 				width: 273px;
 				height: 187px;
 			}
 			@media (min-width: $screen-lg) {
 				width: 360px;
 				height: 246px;
-				right: 235px;
+				right: calc((100vw - 750px) / 2);
 				top: 308px;
 			}
 		}
