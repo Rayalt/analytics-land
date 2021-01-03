@@ -6,8 +6,14 @@
 }
 @mixin descr {
 	color: var(--text-secondary);
-	font-size: 18px;
-	line-height: 27px;
+	font-size: 10px;
+	line-height: 150%;
+	@media (min-width: $screen-sm) {
+		font-size: 14px;
+	}
+	@media (min-width: $screen-md) {
+		font-size: 18px;
+	}
 }
 @mixin content-gap-small {
 	display: grid;

@@ -5,13 +5,18 @@
 .btn {
 	border-radius: 68px;
 	text-align: center;
-	height: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	&__primary {
 		background-color: var(--color-pink);
 		transition: opacity .75s ease;
+		height: 25px;
+		width: 106px;
+		@media (min-width: $screen-md) {
+			height: 50px;
+			width: 238px;
+		}
 		&:hover {
 			opacity: .5;
 		}
@@ -24,7 +29,7 @@
 		}
 	}
 	&__bordered {
-		padding: 10px 53px;
+		//padding: 10px 53px;
 		border: 1px solid var(--text-secondary);
 		transition: background 1s ease;
 		&:hover {
@@ -38,8 +43,14 @@
 		align-items: center;
 		justify-content: center;
 		text-decoration: none;
-		font-size: 16px;
+		font-size: 10px;
 		border-radius: 68px;
+		@media (min-width: $screen-md) {
+			font-size: 13px;
+		}
+		@media (min-width: $screen-md) {
+			font-size: 16px;
+		}
 		&_w {
 			color: var(--color-typography-inverse);
 		}
