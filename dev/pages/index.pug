@@ -102,7 +102,7 @@ block content
 				.unit 01
 			.grid__col.grid__col_lg-1
 				.unit 01
-	
+
 		//.overlay
 		.grid
 			.grid__row
@@ -130,8 +130,8 @@ block content
 					.unit 01
 				.grid__col.grid__col_lg-1
 					.unit 01
-	
-	.overlay
+
+	//.overlay
 		.grid
 			.grid__row
 				.grid__col.grid__col_sm-1
@@ -158,28 +158,218 @@ block content
 					.unit 01
 				.grid__col.grid__col_sm-1
 					.unit 01
-	
+
+	header.header
+		.header__inner
+			.grid
+				.grid__row
+					.grid__col.grid__col_lg-12
+						.header__row
+							.header__col
+								svg.icon.icon__logo_primary
+									use(xlink:href='/img/svgSprite.svg#icon__logo_color')
+								nav.header__nav
+									a.header__item(href='#') Products
+									a.header__item(href='#') Pricing
+									a.header__item(href='#') FAQ
+									a.header__item(href='#') Blog
+							.header__col
+								.header__btn.btn.btn__ghost
+									a.btn__link.btn__link_d(href='#') Sing in
+								.header__btn.btn.btn__bordered
+									a.btn__link.btn__link_d(href='#') Sing up
+							.header__menu
+								svg.icon.icon__menu
+									use(xlink:href='/img/svgSprite.svg#icon__menu')
+
+	.side-nav
+		.side-nav__inner
+			.side-nav__header
+				svg.icon.icon__menu-logo
+					use(xlink:href='/img/svgSprite.svg#icon__logo_color')
+				.side-nav__close
+					svg.icon.icon__close
+						use(xlink:href='/img/svgSprite.svg#icon__close')
+			nav.side-nav__nav
+				a.side-nav__item(href='#') Products
+				a.side-nav__item(href='#') Pricing
+				a.side-nav__item(href='#') FAQ
+				a.side-nav__item(href='#') Blog
+			.side-nav__footer
+				.side-nav__socials
+					a.side-nav__socials-link(href='https://www.facebook.com')
+						svg.icon__socials
+							use(xlink:href='img/svgSprite.svg#icon__fb')
+					a.side-nav__socials-link(href='https://twitter.com')
+						svg.icon__socials
+							use(xlink:href='img/svgSprite.svg#icon__tw')
+					a.side-nav__socials-link(href='https://instagram.com')
+						svg.icon__socials
+							use(xlink:href='img/svgSprite.svg#icon__inst')
+				.side-nav__login
+					.side-nav__btn.side-nav__btn_ghost
+						a.side-nav__link(href='#') Sing in
+					.side-nav__btn.side-nav__btn_bordered
+						a.side-nav__link(href='#') Sing up
+
 	section.hero
+		.hero__img
+			img.hero__img-back(src='/img/img__hero_back.png' alt='')
+			img.hero__img-front(src='/img/img__hero_front.png' alt='')
+		svg.hero__layer
+			use(xlink:href='/img/svgSprite.svg#bg')
+		svg.hero__bg-logo.hero__bg-logo_top
+			use(xlink:href='/img/svgSprite.svg#bg__logo')
+		svg.hero__bg-logo.hero__bg-logo_bottom
+			use(xlink:href='/img/svgSprite.svg#bg__logo')
 		.hero__inner
 			.grid
 				.grid__row
-					.grid__col.grid__col_sm-6.grid__col_md-7.grid__col_lg-6
+					.grid__col.grid__col_sm-6.grid__col_md-7.grid__col_lg-7
 						.hero__content
 							h1.hero__heading Monitor your business on real-time dashboard
 							p.hero__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. 
 							.hero__btn
 								.btn.btn__primary
 									a.btn__link.btn__link_w(href='#') Try for free
-			img.hero__img.hero__img_back(src='/img/img__hero_back.png' alt='')
-			img.hero__img.hero__img_front(src='/img/img__hero_front.png' alt='')
-			svg.hero__layer
-				use(xlink:href='/img/svgSprite.svg#bg')
-			img.hero__bg-logo.hero__bg-logo_top(src='/img/img__bg_logo.png' alt='')
-			img.hero__bg-logo.hero__bg-logo_bottom(src='/img/img__bg_logo.png' alt='')
+
+	section.main-features
+		.grid
+			.grid__row
+				.grid__col.grid__col_sm-10.col-offset__sm-1.grid__col_lg-12.col-offset__lg-0
+					h2.main-features__heading Main Features
+					p.main-features__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet. Id vel in nam malesuada.
+		.main-features__inner
+			.grid
+				.grid__row
+					.grid__col.grid__col_sm-4.grid__col_md-4.grid__col_lg-4
+						+main-features([
+							{
+								title: 'Monitoring 24/7',
+								text: 'Lorem ipsum dolor sit amet, consectetur adipis cing elit. Elementum nisi aliquet volutpat.',
+								icon: 'monitoring'
+							}
+						])
+					.grid__col.grid__col_sm-4.grid__col_md-4.grid__col_lg-4
+						+main-features([
+							{
+								title: 'Widget System',
+								text: 'Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar.',
+								icon: 'widget'
+							}
+						])
+					.grid__col.grid__col_sm-4.grid__col_md-4.grid__col_lg-4
+						+main-features([
+							{
+								title: 'Best Performance',
+								text: 'Lorem ipsum dolor sit amet, consectetur adipis cing elit. Elementum nisi aliquet volutpat.',
+								icon: 'performance'
+							}
+						])
+
+	section.features.features_first
+		.features__inner
+			.grid
+				.grid__row
+					.grid__col.grid__col_lg-12
+						+features([
+							{
+								heading: 'Automated Reports & Widget Alerts',
+								descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.',
+								num: '01'
+							}
+						])
+	section.features.features_even
+		.features__inner
+			.grid
+				.grid__row
+					.grid__col.grid__col_lg-12
+						+features([
+							{
+								heading: 'Fully customizable to address your needs',
+								descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.',
+								num: '02'
+							}
+						])
+	section.features
+		.features__inner
+			.grid
+				.grid__row
+					.grid__col.grid__col_lg-12
+						+features([
+							{
+								heading: 'Pre-built Dashboard Templates',
+								descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.',
+								num: '03'
+							}
+						])
+	
+	footer.footer
+		svg.footer__layer
+			use(xlink:href='/img/svgSprite.svg#bg')
+		//svg.footer__bg-logo
+			use(xlink:href='/img/svgSprite.svg#bg__logo')
+		.footer__inner
+			.grid
+				.grid__row
+					.grid__col.grid__col_sm-8.col-offset__sm-2
+						.footer__content
+							h2.footer__heading Pricing Plans
+							p.footer__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. 
+			.footer__cards
+				.grid
+					.grid__row
+						.grid__col.grid__col_lg-12
+							.cards
+								.cards__row
+									.cards__item
+										.cards__title Starter
+										.cards__subtitle up to 3 users
+										.cards__prise $29
+										.cards__subtitle per month
+										.cards__btn-bordered.btn.btn__bordered
+											a.btn__link.btn__link_w(href='#') Order
+									.cards__item.cards__item_even
+										.cards__title Standard
+										.cards__subtitle up to 20 users
+										.cards__prise $99
+										.cards__subtitle per month
+										.cards__btn.btn.btn__primary
+											a.btn__link.btn__link_w(href='#') Order
+									.cards__item
+										.cards__title Premium
+										.cards__subtitle up to 200 users
+										.cards__prise $299
+										.cards__subtitle per month
+										.cards__btn-bordered.btn.btn__bordered
+											a.btn__link.btn__link_w(href='#') Order
+			.footer__links
+				.grid
+					.grid__row
+						.grid__col.grid__col_lg-12
+							.footer__row
+								svg.icon.icon__logo_primary
+									use(xlink:href='/img/svgSprite.svg#icon__logo_grey')
+								nav.footer__nav
+									a.footer__item(href='#') Products
+									a.footer__item(href='#') Pricing Plans
+									a.footer__item(href='#') FAQ
+									a.footer__item(href='#') Blog
+								.footer__socials
+									a.footer__socials-link(href='htts://twitter.com')
+										svg.icon.icon__socials
+											use(xlink:href='img/svgSprite.svg#icon__fb')
+									a.footer__socials-link(href='htts://instagram.com')
+										svg.icon.icon__socials
+											use(xlink:href='img/svgSprite.svg#icon__tw')
+									a.footer__socials-link(href='htts://instagram.com')
+										svg.icon.icon__socials
+											use(xlink:href='img/svgSprite.svg#icon__inst')
+
 	//section.section.section__first
-		svg.section__layer.section__layer_hero
-			use(xlink:href='/img/svgSprite.svg#bg')
-	section.section.section__second
-	footer.section.section__third
-		svg.section__layer.section__layer_footer
-			use(xlink:href='/img/svgSprite.svg#bg')
+			svg.section__layer.section__layer_hero
+				use(xlink:href='/img/svgSprite.svg#bg')
+	//section.section.section__second
+	//footer.section.section__third
+			svg.section__layer.section__layer_footer
+				use(xlink:href='/img/svgSprite.svg#bg')

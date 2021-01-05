@@ -7,32 +7,43 @@
 	z-index: 99;
 	position: absolute;
 	&__row {
-		padding: 50px 0;
+		padding: 16px 0;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-	}
-	&__logo {
-		height: 40px;
-		width: 184px;
+		@media (min-width: $screen-md) {
+			padding: 50px 0;
+		}
 	}
 	&__nav {
-		display: flex;
 		margin: 0 0 0 82px;
+		display: none;
+		@media (min-width: $screen-md) {
+			display: flex;
+		}
 	}
 	&__item {
 		@include nav-item;
-	}
-	&__login {
-		display: flex;
-	}
-	&__btn {
 		& + & {
-			margin: 0 0 0 40px;
+			margin: 0 0 0 36px;
 		}
 	}
 	&__col {
 		display: flex;
 		align-items: center;
+		&:nth-of-type(2) {
+			display: none;
+			@media (min-width: $screen-md) {
+				display: flex;
+			}
+		}
+	}
+	&__menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media (min-width: $screen-md) {
+			display: none;
+		}
 	}
 }

@@ -19,4 +19,20 @@
 	&__footer {
 		flex: 0 0 auto;
 	}
+	&__darker {
+		height: 100%;
+		left: 0;
+		background: rgba(#060f28, .7);
+		opacity: 0;
+		pointer-events: none;
+		position: fixed;
+		top: 0;
+		transition: opacity .25s ease;
+		width: 100%;
+		z-index: 104;
+		.open-nav & {
+			opacity: 1;
+			pointer-events: auto;
+		}
+	}
 }

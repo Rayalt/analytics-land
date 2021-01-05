@@ -11,29 +11,43 @@
 	&__primary {
 		background-color: var(--color-pink);
 		transition: opacity .75s ease;
-		height: 25px;
-		width: 106px;
+		height: 50px;
+		width: 238px;
 		@media (min-width: $screen-md) {
-			height: 50px;
-			width: 238px;
+			
 		}
 		&:hover {
 			opacity: .5;
 		}
 	}
 	&__ghost {
-		padding: 10px 53px;
-		transition: background 1s ease;
+		width: 161px;
+		height: 40px;
+		@media (min-width: $screen-md) {
+			//width: 161px;
+			//height: 40px;
+		}
+	}
+	&__ghost &__link {
+		transition: color .5s ease;
 		&:hover {
-			background: var(--body-bg);
+			color: var(--color-typography-inverse);
 		}
 	}
 	&__bordered {
-		//padding: 10px 53px;
-		border: 1px solid var(--text-secondary);
+		border: .5px solid var(--text-secondary);
 		transition: background 1s ease;
+		width: 161px;
+		height: 40px;
+		//width: 117px;
+		//height: 29px;
+		//padding: 16px 0;
 		&:hover {
 			background: var(--body-bg);
+		}
+		@media (min-width: $screen-md) {
+			//width: 161px;
+			//height: 40px;
 		}
 	}
 	&__link {
@@ -43,11 +57,8 @@
 		align-items: center;
 		justify-content: center;
 		text-decoration: none;
-		font-size: 10px;
+		font-size: 14px;
 		border-radius: 68px;
-		@media (min-width: $screen-md) {
-			font-size: 13px;
-		}
 		@media (min-width: $screen-md) {
 			font-size: 16px;
 		}

@@ -3,8 +3,7 @@
 mixin features(vars)
 	each item, item in vars
 		.features__item
-			.features__col
-				.features__content
-					h2.features__heading!= item.heading
-					p.features__descr!= item.descr
+			.features__content
+				h2.features__heading!= item.heading
+				p.features__descr!= item.descr
 			img.features__img(src='/img/img__features_' + item.num + '.png')

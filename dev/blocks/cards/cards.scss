@@ -4,52 +4,98 @@
 
 .cards {
 	&__title {
-		font-size: 30px;
-		line-height: 35px;
+		font-size: 18px;
+		line-height: 116%;
 		font-weight: 700;
+		color: var(--color-typography-inverse);
+		@media (min-width: $screen-md) {
+			font-size: 22px;
+		}
+		@media (min-width: $screen-lg) {
+			font-size: 30px;
+		}
+	}
+	&__item_even &__title {
+		color: var(--color-typography);
 	}
 	&__subtitle {
-		line-height: 27px;
+		line-height: 150%;
 		margin: 10px 0 0 0;
 		color: var(--text-secondary);
+		font-size: 14px;
+		@media (min-width: $screen-md) {
+			font-size: 18px;
+		}
 	}
 	&__prise {
-		font-size: 60px;
-		line-height: 70px;
+		font-size: 40px;
+		line-height: 116%;
 		font-weight: 700;
+		width: 220px;
 		margin: 66px 0 0 0;
 		position: relative;
+		color: var(--color-typography-inverse);
+		@media (min-width: $screen-md) {
+			font-size: 60px;
+		}
 		&:first-letter {
-			font-size: 30px;
+			font-size: 20px;
+			@media (min-width: $screen-md) {
+				font-size: 30px;
+			}
 		}
 		&::before {
 			height: 1px;
 			content: '';
 			position: absolute;
-			width: 220px;
-			left: -60px;
+			width: 170px;
+			left: 25px;
 			top: -28px;
 			background: var(--card-line);
+			@media (min-width: $screen-md) {
+				width: 220px;
+				left: 0px;
+			}
 		}
 	}
-	&__prise-sign {
-		font-size: 16px;
-		line-height: 22px;
-		margin: 0 0 40px 0;
-		color: var(--text-secondary);
+	&__item_even &__prise {
+		color: var(--color-typography);
 	}
 	&__row {
 		display: flex;
 		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
+		@media (min-width: $screen-sm) {
+			flex-direction: row;
+		}
 	}
 	&__item {
-		padding: 50px 0 70px 0;
+		padding: 30px 0;
 		border-radius: 30px;
-		width: 340px;
+		//width: 340px;
+		//
+		width: 220px;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		& + & {
+			margin-top: 30px;
+			@media (min-width: $screen-sm) {
+				margin: 0;
+			}
+		}
+		@media (min-width: $screen-sm) {
+			margin: 0;
+		}
+		@media (min-width: $screen-md) {
+			padding: 50px 0 70px 0;
+			width: 304px;
+		}
+		@media (min-width: $screen-lg) {
+			width: 340px;
+		}
 		&:nth-of-type(odd) {
 			background: var(--card-dark);
 			box-shadow: 0 15px 45px var(--light-shadow);
@@ -61,6 +107,30 @@
 		}
 	}
 	&__btn {
-		width: 206px;
+		margin: 20px 0 0 0;
+		width: 108px;
+		height: 32px;
+		@media (min-width: $screen-sm) {
+			width: 150px;
+			height: 40px;
+		}
+		@media (min-width: $screen-md) {
+			width: 200px;
+			height: 50px;
+		}
+		
+	}
+	&__btn-bordered {
+		margin: 20px 0 0 0;
+		width: 108px;
+		height: 32px;
+		@media (min-width: $screen-sm) {
+			width: 150px;
+			height: 40px;
+		}
+		@media (min-width: $screen-md) {
+			width: 200px;
+			height: 50px;
+		}
 	}
 }

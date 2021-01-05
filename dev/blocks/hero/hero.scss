@@ -6,21 +6,20 @@
 	position: relative;
 	overflow: hidden;
 	&__inner {
-		height: 293px;
 		background: var(--dark-blue);
 		padding-top: 66px;
-		padding-bottom: 424px;
+		padding-bottom: 100px;
 		@media (min-width: $screen-sm) {
-			height: 470px;
 			padding-top: 98px;
+			padding-bottom: 167px;
 		}
 		@media (min-width: $screen-md) {
-			height: 616px;
-			padding-top: 191px;
+			padding-top: 190px;
+			padding-bottom: 108px;
 		}
 		@media (min-width: $screen-lg) {
-			height: 800px;
 			padding-top: 242px;
+			padding-bottom: 258px;
 		}
 	}
 	&__layer {
@@ -29,19 +28,24 @@
 		width: 3008px;
 		height: 424px;
 		bottom: 0;
-		transform: translateX(-50%) rotate(180deg);
-		left: 50%;
-		z-index: 2;
+		transform: rotate(180deg);
+		left: 0;
+		z-index: 1;
 		@media (min-width: $screen-sm) {
-			bottom: -18%;
+			left: 20%;
+			transform: translateX(-20%) rotate(178deg);
+			
 		}
 		@media (min-width: $screen-md) {
-			//bottom: -18%;
+			left: 10%;
+			transform: translateX(-10%) rotate(179deg);
 		}
 		@media (min-width: $screen-lg) {
-			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%) rotate(180deg);
 		}
 	}
+
 	&__content {
 		color: aliceblue;
 		max-width: 550px;
@@ -51,9 +55,9 @@
 		position: absolute;
 		&_top {
 			top: -34px;
-			left: calc((100vw - 425px) / 2);
-			width: 134px;
-			height: 134px;
+			left: calc((100vw - 355px) / 2);
+			width: 136px;
+			height: 136px;
 			@media (min-width: $screen-sm) {
 				width: 318px;
 				height: 318px;
@@ -74,7 +78,7 @@
 			}
 		}
 		&_bottom {
-			top: 20px;
+			top: 280px;
 			right: calc((100vw - 475px) / 2);
 			width: 290px;
 			height: 290px;
@@ -99,55 +103,59 @@
 	}
 	&__img {
 		position: absolute;
-		display: block;
 		display: none;
 		z-index: 4;
-		top: 30%;
 		@media (min-width: $screen-sm) {
-			display: block;
-		}
-		&_back {
-			width: 418px;
-			height: 288px;
+			right: calc((100vw - 140px) / 2);
+			display: flex;
 			top: 98px;
-			right: calc((100vw - 975px) / 2);
-			@media (min-width: $screen-md) {
-				top: 129px;
-				width: 612px;
-				height: 421px;
-				right: calc((100vw - 1565px) / 2);
-			}
-			@media (min-width: $screen-lg) {
-				width: 804px;
-				height: 554px;
-				top: 164px;
-				right: calc((100vw - 1830px) / 2);
-			}
 		}
-		&_front {
-			width: 187px;
-			height: 128px;
-			right: calc((100vw - 420px) / 2);
-			top: 180px;
-			@media (min-width: $screen-md) {
-				top: 243px;
-				right: calc((100vw - 780px) / 2);
-				width: 273px;
-				height: 187px;
-			}
-			@media (min-width: $screen-lg) {
-				width: 360px;
-				height: 246px;
-				right: calc((100vw - 750px) / 2);
-				top: 308px;
-			}
+		@media (min-width: $screen-md) {
+			right: calc((100vw - 350px) / 2);
+			top: 129px;
+		}
+		@media (min-width: $screen-lg) {
+			right: calc((100vw - 220px) / 2);
+		}
+	}
+	&__img-back {
+		position: absolute;
+		width: 418px;
+		height: 288px;
+		@media (min-width: $screen-md) {
+			width: 612px;
+			height: 421px;
+		}
+		@media (min-width: $screen-lg) {
+			width: 804px;
+			height: 554px;
+		}
+	}
+	&__img-front {
+		position: absolute;
+		width: 187px;
+		height: 128px;
+		top: 80px;
+		left: -40px;
+		@media (min-width: $screen-md) {
+			width: 273px;
+			height: 187px;
+			left: -60px;
+			top: 120px;
+		}
+		@media (min-width: $screen-lg) {
+			width: 360px;
+			height: 246px;
+			left: -70px;
+			top: 150px;
 		}
 	}
 	&__heading {
-		font-size: 26px;
+		font-size: 32px;
 		line-height: 115%;
-		margin: 0;
+		margin: 48px 0 0 0;
 		@media (min-width: $screen-sm) {
+			margin: 0;
 			font-size: 32px;
 		}
 		@media (min-width: $screen-md) {
@@ -160,12 +168,17 @@
 		@media (min-width: $screen-sm) {
 			margin: 16px 0 0 0;
 		}
+		@media (min-width: $screen-md) {
+			margin: 36px 0 0 0;
+		}
 		
 	}
 	&__btn {
-		padding: 30px 0;
+		height: 50px;
+		width: 238px;
+		margin: 24px 0 0 0;
 		@media (min-width: $screen-sm) {
-			padding: 50px 0;
+			margin: 32px 0 0 0;
 		}
 	}
 }

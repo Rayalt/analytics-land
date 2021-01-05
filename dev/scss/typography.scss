@@ -1,35 +1,40 @@
 @mixin heading {
 	font-weight: 700;
-	margin: 0;
-	font-size: 40px;
-	line-height: 47px;
+	font-size: 20px;
+	line-height: 117%;
+	@media (min-width: $screen-sm) {
+		font-size: 24px;
+	}
+	@media (min-width: $screen-md) {
+		font-size: 40px;
+	}
 }
+
 @mixin descr {
 	color: var(--text-secondary);
-	font-size: 10px;
+	font-size: 14px;
 	line-height: 150%;
 	@media (min-width: $screen-sm) {
-		font-size: 14px;
+		font-size: 16px;
 	}
 	@media (min-width: $screen-md) {
 		font-size: 18px;
 	}
 }
-@mixin content-gap-small {
-	display: grid;
-	grid-gap: 30px;
+
+@mixin title {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 115%;
+	@media (min-width: $screen-md) {
+		font-size: 16px;
+	}
 }
-@mixin content-gap-large {
-	display: grid;
-	grid-gap: 36px;
-}
+
 @mixin nav-item {
 	text-decoration: none;
 	color: var(--text-secondary);
 	transition: color .35s ease;
-	& + & {
-		margin: 0 0 0 36px;
-	}
 	&:hover {
 		color: var(--color-typography-inverse);
 	}

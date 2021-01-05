@@ -1,0 +1,5 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25 11.75H7V10H25V11.75Z" fill="var(--color-pink)"/>
+<path d="M25 16.875H7V15.125H16H25V16.875Z" fill="var(--color-pink)"/>
+<path d="M7 22H25V20.25H7V22Z" fill="var(--color-pink)"/>
+</svg>

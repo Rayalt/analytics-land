@@ -3,39 +3,55 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .features {
-	&_first &__inner {
-		padding: 130px 0 60px 0;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	@media (min-width: $screen-sm) {
+		text-align: left;
 	}
-	&_even &__inner {
-		padding: 60px 0;
-	}
-	&:last-of-type {
-		.features__inner {
-			padding: 60px 0 343px 0;
+	&:last-of-type &__inner {
+		padding-bottom: 16px;
+		@media (min-width: $screen-sm) {
+			padding-bottom: 24px;
+		}
+		@media (min-width: $screen-md) {
+			padding-bottom: 38px;
+		}
+		@media (min-width: $screen-lg) {
+			padding-bottom: 115px;
 		}
 	}
-	&_even &__item {
-		flex-direction: row-reverse;
-	}
-	&_even &__item &__img {
-		margin: 0 100px 0 0;
-	}
-	&_even &__item &__col {
-		margin: 0;
-	}
-	&__content {
-		@include content-gap-small;
-	}
 	&__inner {
-
+		padding: 50px 0 0 0;
+		@media (min-width: $screen-sm) {
+			padding: 60px 0 0 0;
+		}
+		@media (min-width: $screen-md) {
+			padding: 100px 0 0 0;
+		}
+		@media (min-width: $screen-lg) {
+			padding: 120px 0 0 0;
+		}
+	}
+	&_first &__inner {
+		padding: 110px 0 0 0;
+		@media (min-width: $screen-lg) {
+			padding: 130px 0 0 0;
+		}
 	}
 	&__item {
 		display: flex;
 		align-items: center;
+		flex-direction: column-reverse;
+		@media (min-width: $screen-sm) {
+			flex-direction: row;
+		}
 	}
-	&__col {
-		min-width: 480px;
-		margin: 0 100px 0 0;
+	&_even &__item {
+		flex-direction: column-reverse;
+		@media (min-width: $screen-sm) {
+			flex-direction: row-reverse;
+		}
 	}
 	&__img {
 		box-shadow: 0 18px 50px rgba(#192a59, .2);
@@ -43,14 +59,57 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 600px;
-		height: 410px;
+		width: 288px;
+		height: 197px;
+		@media (min-width: $screen-sm) {
+			width: 324px;
+			height: 221px;
+		}
+		@media (min-width: $screen-md) {
+			width: 467px;
+			height: 319px;
+		}
+		@media (min-width: $screen-lg) {
+			width: 600px;
+			height: 410px;
+		}
+		
+	}
+	&__content {
+		@media (min-width: $screen-sm) {
+			width: 340px;
+			margin: 0 36px 0 0;
+		}
+		
+		@media (min-width: $screen-md) {
+			width: 467px;
+			margin: 0 26px 0 0;
+		}
+		@media (min-width: $screen-lg) {
+			width: 480px;
+			margin: 0 100px 0 0;
+		}
+	}
+	&_even &__content {
+		@media (min-width: $screen-sm) {
+			margin: 0 0 0 36px;
+		}
+		@media (min-width: $screen-md) {
+			margin: 0 0 0 26px;
+		}
+		@media (min-width: $screen-lg) {
+			margin: 0 0 0 100px;
+		}
 	}
 	&__heading {
 		@include heading;
+		margin: 20px 0 0 0;
 	}
 	&__descr {
 		@include descr;
-		margin: 0;
+		margin: 10px 0 0 0;
+		@media (min-width: $screen-md) {
+			margin: 30px 0 0 0;
+		}
 	}
 }

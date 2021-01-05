@@ -3,41 +3,99 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .footer {
-	min-height: 100vh;
 	position: relative;
-	color: var(--color-typography-inverse);
+	overflow: hidden;
 	&__inner {
-		padding: 44px 0 103px 0;
-		height: 100%;
-	}
-	&__bg {
-		height: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		z-index: -1;
+		background: var(--dark-blue);
+		padding-bottom: 40px;
+		padding-top: 80px;
+		@media (min-width: $screen-sm) {
+			padding-bottom: 35px;
+			padding-top: 160px;
+		}
+		@media (min-width: $screen-md) {
+			padding-bottom: 80px;
+			padding-top: 200px;
+			
+		}
+		@media (min-width: $screen-lg) {
+			padding-bottom: 103px;
+			padding-top: 387px;
+		}
 	}
 	&__layer {
-		height: 100%;
+		display: block;
 		position: absolute;
-		width: 100%;
-		background: var(--dark-blue);
-		&_skew {
-			//height: 254px;
-			width: 100vw;
-			transform: translateY(calc(100vh - 972px));
+		width: 3008px;
+		height: 424px;
+		top: 0;
+		right: 0;
+		z-index: 1;
+	}
+	&__bg-logo {
+		position: absolute;
+		z-index: 1;
+		width: 404px;
+		height: 404px;
+		top: 242px;
+		left: calc((100vw - 155px) / 2);
+	}
+	&__nav {
+		margin: 30px 0 0 0;
+		display: flex;
+		justify-content: space-between;
+		@media (min-width: $screen-sm) {
+			margin: 0;
 		}
-		&_logo {
-			background: url('/img/img__bg_footer-logo.png') no-repeat right bottom;
+	}
+	&__item {
+		font-size: 14px;
+		text-decoration: none;
+		color: var(--text-secondary);
+		transition: color .35s ease;
+		&:hover {
+			color: var(--color-typography-inverse);
+		}
+		@media (min-width: $screen-sm) {
+			& + & {
+				margin: 0 0 0 40px;
+			}
+		}
+	}
+	&__row {
+		padding: 0 10px;
+		&::before {
+			height: 1px;
+			content: '';
+			position: absolute;
+			width: calc(100vw - 40px);
+			bottom: 143px;
+			background: var(--card-line);
+			@media (min-width: $screen-sm) {
+				width: calc(100vw - 70px);
+				bottom: 105px;
+			}
+			@media (min-width: $screen-md) {
+				width: calc(100vw - 65px);
+				bottom: 173px;
+			}
+			@media (min-width: $screen-lg) {
+				width: 1180px;
+			}
+		}
+		@media (min-width: $screen-sm) {
+			padding: 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 		}
 	}
 	&__content {
-		@include content-gap-large;
 		text-align: center;
 	}
 	&__heading {
 		@include heading;
+		color: var(--color-typography-inverse);
 	}
 	&__descr {
 		@include descr;
@@ -48,49 +106,21 @@
 	&__cards {
 		margin: 80px 0 0 0;
 	}
-	&__nav {
-		display: flex;
-	}
-	&__item {
-		@include nav-item;
-	}
-	&__socials {
-		display: grid;
-		grid-gap: 40px;
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-	&__socials-link {
-		width: 40px;
-		height: 40px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	&__socials-icon {
-		width: 40px;
-		height: 40px;
-		fill: var(--text-secondary);
-		transition: fill .5s ease;
-		&:hover {
-			fill: var(--color-white);
+	&__links {
+		padding: 100px 0 0 0;
+		@media (min-width: $screen-sm) {
+			padding: 150px 0 0 0;
+		}
+		@media (min-width: $screen-md) {
+			padding: 164px 0 0 0;
 		}
 	}
-	&__logo {
-		height: 40px;
-		width: 184px;
-	}
-	&__row {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 164px 0 0 0;
-		&::before {
-			height: 1px;
-			content: '';
-			position: absolute;
-			width: calc(1200px - 30px);
-			bottom: 196px;
-			background: var(--card-line);
+	&__socials {
+		display: none;
+		grid-gap: 40px;
+		grid-template-columns: 1fr 1fr 1fr;
+		@media (min-width: $screen-sm) {
+			display: grid;
 		}
 	}
 }
