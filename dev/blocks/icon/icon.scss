@@ -27,8 +27,12 @@
 		}
 	}
 	&__menu-logo {
-		width: 92px;
-		height: 20px;
+		width: 147px;
+		height: 32px;
+		@media (min-width: $screen-md) {
+			height: 40px;
+			width: 184px;
+		}
 	}
 	&__socials {
 		width: 20px;
@@ -38,7 +42,7 @@
 		&:hover {
 			fill: var(--color-white);
 		}
-		@media (min-width: $screen-md) {
+		@media (min-width: $screen-sm) {
 			width: 24px;
 			height: 24px;
 		}

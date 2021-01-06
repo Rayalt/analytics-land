@@ -12,7 +12,7 @@ window.onload = function() {
     closeMenuButton.addEventListener('click', function() {
         pageBody.classList.toggle('open-nav');
     })
-    /*darkerCurtain.addEventListener('click', function() {
+    darkerCurtain.addEventListener('click', function() {
         pageBody.classList.toggle('open-nav');
-    })*/
+    })
 }

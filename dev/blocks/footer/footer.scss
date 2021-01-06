@@ -72,11 +72,11 @@
 			bottom: 143px;
 			background: var(--card-line);
 			@media (min-width: $screen-sm) {
-				width: calc(100vw - 70px);
+				width: calc(100vw - 68px);
 				bottom: 105px;
 			}
 			@media (min-width: $screen-md) {
-				width: calc(100vw - 65px);
+				width: calc(100vw - 64px);
 				bottom: 173px;
 			}
 			@media (min-width: $screen-lg) {
