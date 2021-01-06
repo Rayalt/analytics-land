@@ -3,42 +3,66 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .footer {
+	background: var(--dark-blue);
 	position: relative;
 	overflow: hidden;
 	&__inner {
-		background: var(--dark-blue);
+		position: relative;
+		z-index: 3;
 		padding-bottom: 40px;
 		padding-top: 80px;
 		@media (min-width: $screen-sm) {
 			padding-bottom: 35px;
-			padding-top: 160px;
+			padding-top: 137px;
 		}
 		@media (min-width: $screen-md) {
 			padding-bottom: 80px;
-			padding-top: 200px;
+			padding-top: 162px;
 			
 		}
 		@media (min-width: $screen-lg) {
 			padding-bottom: 103px;
-			padding-top: 387px;
+			padding-top: 272px;
 		}
 	}
 	&__layer {
-		display: block;
 		position: absolute;
-		width: 3008px;
-		height: 424px;
+		width: 1920px;
+		height: 270px;
 		top: 0;
-		right: 0;
-		z-index: 1;
+		transform: translate(-50%, -36%) rotate(180deg);
+		left: 50%;
+		z-index: 2;
+		@media (min-width: 600px) {
+			transform: translate(-50%, -30%) rotate(180deg);
+		}
+		@media (min-width: $screen-sm) {
+			transform: translate(-50%, -27%) rotate(180deg);
+		}
+		@media (min-width: $screen-md) {
+			transform: translate(-50%, -21%) rotate(180deg);
+		}
+		@media (min-width: $screen-lg) {
+			transform: translate(-50%, 0) rotate(180deg);
+		}
 	}
 	&__bg-logo {
 		position: absolute;
 		z-index: 1;
 		width: 404px;
 		height: 404px;
-		top: 242px;
+		top: 100px;
 		left: calc((100vw - 155px) / 2);
+		@media (min-width: $screen-sm) {
+			top: 140px;
+			width: 1286px;
+			height: 1286px;
+		}
+		@media (min-width: $screen-lg) {
+			top: 203px;
+			width: 2010px;
+			height: 2010px;
+		}
 	}
 	&__nav {
 		margin: 30px 0 0 0;
@@ -96,15 +120,25 @@
 	&__heading {
 		@include heading;
 		color: var(--color-typography-inverse);
+		margin: 0;
 	}
 	&__descr {
 		@include descr;
 		max-width: 1000px;
-		margin: 0 auto;
+		margin: 10 0 0 0;
 		color: var(--text-secondary);
+		@media (min-width: $screen-md) {
+			margin: 36px 0 0 0;
+		}
 	}
 	&__cards {
-		margin: 80px 0 0 0;
+		margin: 30px 0 0 0;
+		@media (min-width: $screen-sm) {
+			margin: 60px 0 0 0;
+		}
+		@media (min-width: $screen-md) {
+			margin: 80px 0 0 0;
+		}
 	}
 	&__links {
 		padding: 100px 0 0 0;

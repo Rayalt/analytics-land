@@ -3,10 +3,12 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .hero {
+	background: var(--dark-blue);
 	position: relative;
 	overflow: hidden;
 	&__inner {
-		background: var(--dark-blue);
+		position: relative;
+		z-index: 3;
 		padding-top: 66px;
 		padding-bottom: 100px;
 		@media (min-width: $screen-sm) {
@@ -23,33 +25,28 @@
 		}
 	}
 	&__layer {
-		display: block;
 		position: absolute;
-		width: 3008px;
-		height: 424px;
+		width: 1920px;
+		height: 270px;
 		bottom: 0;
-		transform: rotate(180deg);
-		left: 0;
-		z-index: 1;
+		transform: translate(-50%, 36%);
+		left: 50%;
+		z-index: 2;
+		@media (min-width: 600px) {
+			transform: translate(-50%, 30%);
+		}
 		@media (min-width: $screen-sm) {
-			left: 20%;
-			transform: translateX(-20%) rotate(178deg);
-			
+			transform: translate(-50%, 27%);
 		}
 		@media (min-width: $screen-md) {
-			left: 10%;
-			transform: translateX(-10%) rotate(179deg);
+			transform: translate(-50%, 21%);
 		}
 		@media (min-width: $screen-lg) {
-			left: 50%;
-			transform: translateX(-50%) rotate(180deg);
+			transform: translate(-50%, 0);
 		}
 	}
-
 	&__content {
-		color: aliceblue;
-		max-width: 550px;
-		z-index: 20;
+		color: var(--color-typography-inverse);
 	}
 	&__bg-logo {
 		position: absolute;
@@ -137,6 +134,8 @@
 		height: 128px;
 		top: 80px;
 		left: -40px;
+		box-shadow: -16px 18px 50px rgba(#192a59, .2);
+		border-radius: 5%;
 		@media (min-width: $screen-md) {
 			width: 273px;
 			height: 187px;

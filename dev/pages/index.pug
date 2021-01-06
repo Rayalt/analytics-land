@@ -159,28 +159,48 @@ block content
 				.grid__col.grid__col_sm-1
 					.unit 01
 
-	header.header
-		.header__inner
+	section.hero
+		.hero__inner
 			.grid
 				.grid__row
-					.grid__col.grid__col_lg-12
-						.header__row
-							.header__col
-								svg.icon.icon__logo_primary
-									use(xlink:href='/img/svgSprite.svg#icon__logo_color')
-								nav.header__nav
-									a.header__item(href='#') Products
-									a.header__item(href='#') Pricing
-									a.header__item(href='#') FAQ
-									a.header__item(href='#') Blog
-							.header__col
-								.header__btn.btn.btn__ghost
-									a.btn__link.btn__link_d(href='#') Sing in
-								.header__btn.btn.btn__bordered
-									a.btn__link.btn__link_d(href='#') Sing up
-							.header__menu
-								svg.icon.icon__menu
-									use(xlink:href='/img/svgSprite.svg#icon__menu')
+					.grid__col.grid__col_sm-6.grid__col_md-7.grid__col_lg-6
+						.hero__content
+							h1.hero__heading Monitor your business on real-time dashboard
+							p.hero__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. 
+							.hero__btn
+								.btn.btn__primary
+									a.btn__link.btn__link_w(href='#') Try for free
+			header.header
+				.header__inner
+					.grid
+						.grid__row
+							.grid__col.grid__col_lg-12
+								.header__row
+									.header__col
+										svg.icon.icon__logo_primary
+											use(xlink:href='/img/svgSprite.svg#icon__logo_color')
+										nav.header__nav
+											a.header__item(href='#') Products
+											a.header__item(href='#') Pricing
+											a.header__item(href='#') FAQ
+											a.header__item(href='#') Blog
+									.header__col
+										.header__btn.btn.btn__ghost
+											a.btn__link.btn__link_d(href='#') Sing in
+										.header__btn.btn.btn__bordered
+											a.btn__link.btn__link_d(href='#') Sing up
+									.header__menu
+										svg.icon.icon__menu
+											use(xlink:href='/img/svgSprite.svg#icon__menu')
+		.hero__img
+			img.hero__img-back(src='/img/img__hero_back.png' alt='')
+			img.hero__img-front(src='/img/img__hero_front.png' alt='')
+		svg.hero__layer
+			use(xlink:href='/img/svgSprite.svg#bg')
+		svg.hero__bg-logo.hero__bg-logo_top
+			use(xlink:href='/img/svgSprite.svg#bg__logo')
+		svg.hero__bg-logo.hero__bg-logo_bottom
+			use(xlink:href='/img/svgSprite.svg#bg__logo')
 
 	.side-nav
 		.side-nav__inner
@@ -212,33 +232,13 @@ block content
 					.side-nav__btn.side-nav__btn_bordered
 						a.side-nav__link(href='#') Sing up
 
-	section.hero
-		.hero__img
-			img.hero__img-back(src='/img/img__hero_back.png' alt='')
-			img.hero__img-front(src='/img/img__hero_front.png' alt='')
-		svg.hero__layer
-			use(xlink:href='/img/svgSprite.svg#bg')
-		svg.hero__bg-logo.hero__bg-logo_top
-			use(xlink:href='/img/svgSprite.svg#bg__logo')
-		svg.hero__bg-logo.hero__bg-logo_bottom
-			use(xlink:href='/img/svgSprite.svg#bg__logo')
-		.hero__inner
+	section.main-features
+		.main-features__header
 			.grid
 				.grid__row
-					.grid__col.grid__col_sm-6.grid__col_md-7.grid__col_lg-7
-						.hero__content
-							h1.hero__heading Monitor your business on real-time dashboard
-							p.hero__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. 
-							.hero__btn
-								.btn.btn__primary
-									a.btn__link.btn__link_w(href='#') Try for free
-
-	section.main-features
-		.grid
-			.grid__row
-				.grid__col.grid__col_sm-10.col-offset__sm-1.grid__col_lg-12.col-offset__lg-0
-					h2.main-features__heading Main Features
-					p.main-features__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet. Id vel in nam malesuada.
+					.grid__col.grid__col_sm-10.col-offset__sm-1.grid__col_lg-12.col-offset__lg-0
+						h2.main-features__heading Main Features
+						p.main-features__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet. Id vel in nam malesuada.
 		.main-features__inner
 			.grid
 				.grid__row
@@ -267,7 +267,7 @@ block content
 							}
 						])
 
-	section.features.features_first
+	section.features
 		.features__inner
 			.grid
 				.grid__row
@@ -279,8 +279,7 @@ block content
 								num: '01'
 							}
 						])
-	section.features.features_even
-		.features__inner
+		.features__inner.features__inner_even
 			.grid
 				.grid__row
 					.grid__col.grid__col_lg-12
@@ -291,7 +290,6 @@ block content
 								num: '02'
 							}
 						])
-	section.features
 		.features__inner
 			.grid
 				.grid__row
@@ -303,11 +301,11 @@ block content
 								num: '03'
 							}
 						])
-	
+
 	footer.footer
 		svg.footer__layer
 			use(xlink:href='/img/svgSprite.svg#bg')
-		//svg.footer__bg-logo
+		svg.footer__bg-logo
 			use(xlink:href='/img/svgSprite.svg#bg__logo')
 		.footer__inner
 			.grid

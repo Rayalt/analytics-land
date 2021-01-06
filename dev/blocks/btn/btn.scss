@@ -10,23 +10,16 @@
 	align-items: center;
 	&__primary {
 		background-color: var(--color-pink);
-		transition: opacity .75s ease;
+		transition: background-color .75s ease;
 		height: 50px;
 		width: 238px;
-		@media (min-width: $screen-md) {
-			
-		}
 		&:hover {
-			opacity: .5;
+			background-color: var(--color-pink-hover);
 		}
 	}
 	&__ghost {
 		width: 161px;
 		height: 40px;
-		@media (min-width: $screen-md) {
-			//width: 161px;
-			//height: 40px;
-		}
 	}
 	&__ghost &__link {
 		transition: color .5s ease;
@@ -39,15 +32,8 @@
 		transition: background 1s ease;
 		width: 161px;
 		height: 40px;
-		//width: 117px;
-		//height: 29px;
-		//padding: 16px 0;
 		&:hover {
 			background: var(--body-bg);
-		}
-		@media (min-width: $screen-md) {
-			//width: 161px;
-			//height: 40px;
 		}
 	}
 	&__link {
