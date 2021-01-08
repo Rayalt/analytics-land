@@ -15,4 +15,9 @@ window.onload = function() {
     darkerCurtain.addEventListener('click', function() {
         pageBody.classList.toggle('open-nav');
     })
+
+    let scene = document.getElementById('scene');
+    let parallaxInstance = new Parallax(scene);
+
+    AOS.init();
 }

@@ -52,6 +52,8 @@
     "webpack-stream": "^6.1.1"
   },
   "dependencies": {
-    "config.js": "^0.1.0"
+    "aos": "^3.0.0-beta.6",
+    "config.js": "^0.1.0",
+    "parallax-js": "^3.1.0"
   }
 }

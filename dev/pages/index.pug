@@ -192,9 +192,11 @@ block content
 									.header__menu
 										svg.icon.icon__menu
 											use(xlink:href='/img/svgSprite.svg#icon__menu')
-		.hero__img
-			img.hero__img-back(src='/img/img__hero_back.png' alt='')
-			img.hero__img-front(src='/img/img__hero_front.png' alt='')
+		.hero__img(id='scene')
+			.hero__prallax(data-depth='0.2')
+				img.hero__img-back(src='/img/img__hero_back.png' alt='')
+			.hero__prallax(data-depth='0.5')
+				img.hero__img-front(src='/img/img__hero_front.png' alt='')
 		svg.hero__layer
 			use(xlink:href='/img/svgSprite.svg#bg')
 		svg.hero__bg-logo.hero__bg-logo_top
