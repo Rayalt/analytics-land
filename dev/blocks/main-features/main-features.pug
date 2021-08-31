@@ -4,6 +4,6 @@ mixin main-features(vars)
 	.main-features__item
 		each item, item in vars
 			svg.main-features__icon
-				use(xlink:href='/img/svgSprite.svg#icon__' + item.icon)
+				use(xlink:href='img/svgSprite.svg#icon__' + item.icon)
 			h3.main-features__title!= item.title
 			p.main-features__text!= item.text

@@ -1,164 +1,6 @@
 extends ../pug/layout_default.pug
 
 block content
-	//.grid
-		.grid__row
-			.grid__col.grid__col_xs-1
-				.unit 01
-			.grid__col.grid__col_xs-1
-				.unit 01
-			.grid__col.grid__col_xs-1
-				.unit 01
-			.grid__col.grid__col_xs-1
-				.unit 01
-			.grid__col.grid__col_xs-1
-				.unit 01
-			.grid__col.grid__col_xs-1
-				.unit 01
-			.grid__col.grid__col_xs-1
-				.unit 01
-			.grid__col.grid__col_xs-1
-				.unit 01
-			.grid__col.grid__col_xs-1
-				.unit 01
-			.grid__col.grid__col_xs-1
-				.unit 01
-			.grid__col.grid__col_xs-1
-				.unit 01
-			.grid__col.grid__col_xs-1
-				.unit 01
-		.grid__row
-			.grid__col.grid__col_sm-1
-				.unit 01
-			.grid__col.grid__col_sm-1
-				.unit 01
-			.grid__col.grid__col_sm-1
-				.unit 01
-			.grid__col.grid__col_sm-1
-				.unit 01
-			.grid__col.grid__col_sm-1
-				.unit 01
-			.grid__col.grid__col_sm-1
-				.unit 01
-			.grid__col.grid__col_sm-1
-				.unit 01
-			.grid__col.grid__col_sm-1
-				.unit 01
-			.grid__col.grid__col_sm-1
-				.unit 01
-			.grid__col.grid__col_sm-1
-				.unit 01
-			.grid__col.grid__col_sm-1
-				.unit 01
-			.grid__col.grid__col_sm-1
-				.unit 01
-		.grid__row
-			.grid__col.grid__col_md-1
-				.unit 01
-			.grid__col.grid__col_md-1
-				.unit 01
-			.grid__col.grid__col_md-1
-				.unit 01
-			.grid__col.grid__col_md-1
-				.unit 01
-			.grid__col.grid__col_md-1
-				.unit 01
-			.grid__col.grid__col_md-1
-				.unit 01
-			.grid__col.grid__col_md-1
-				.unit 01
-			.grid__col.grid__col_md-1
-				.unit 01
-			.grid__col.grid__col_md-1
-				.unit 01
-			.grid__col.grid__col_md-1
-				.unit 01
-			.grid__col.grid__col_md-1
-				.unit 01
-			.grid__col.grid__col_md-1
-				.unit 01
-		.grid__row
-			.grid__col.grid__col_lg-1
-				.unit 01
-			.grid__col.grid__col_lg-1
-				.unit 01
-			.grid__col.grid__col_lg-1
-				.unit 01
-			.grid__col.grid__col_lg-1
-				.unit 01
-			.grid__col.grid__col_lg-1
-				.unit 01
-			.grid__col.grid__col_lg-1
-				.unit 01
-			.grid__col.grid__col_lg-1
-				.unit 01
-			.grid__col.grid__col_lg-1
-				.unit 01
-			.grid__col.grid__col_lg-1
-				.unit 01
-			.grid__col.grid__col_lg-1
-				.unit 01
-			.grid__col.grid__col_lg-1
-				.unit 01
-			.grid__col.grid__col_lg-1
-				.unit 01
-
-		//.overlay
-		.grid
-			.grid__row
-				.grid__col.grid__col_lg-1
-					.unit 01
-				.grid__col.grid__col_lg-1
-					.unit 01
-				.grid__col.grid__col_lg-1
-					.unit 01
-				.grid__col.grid__col_lg-1
-					.unit 01
-				.grid__col.grid__col_lg-1
-					.unit 01
-				.grid__col.grid__col_lg-1
-					.unit 01
-				.grid__col.grid__col_lg-1
-					.unit 01
-				.grid__col.grid__col_lg-1
-					.unit 01
-				.grid__col.grid__col_lg-1
-					.unit 01
-				.grid__col.grid__col_lg-1
-					.unit 01
-				.grid__col.grid__col_lg-1
-					.unit 01
-				.grid__col.grid__col_lg-1
-					.unit 01
-
-	//.overlay
-		.grid
-			.grid__row
-				.grid__col.grid__col_sm-1
-					.unit 01
-				.grid__col.grid__col_sm-1
-					.unit 01
-				.grid__col.grid__col_sm-1
-					.unit 01
-				.grid__col.grid__col_sm-1
-					.unit 01
-				.grid__col.grid__col_sm-1
-					.unit 01
-				.grid__col.grid__col_sm-1
-					.unit 01
-				.grid__col.grid__col_sm-1
-					.unit 01
-				.grid__col.grid__col_sm-1
-					.unit 01
-				.grid__col.grid__col_sm-1
-					.unit 01
-				.grid__col.grid__col_sm-1
-					.unit 01
-				.grid__col.grid__col_sm-1
-					.unit 01
-				.grid__col.grid__col_sm-1
-					.unit 01
-
 	section.hero
 		.hero__inner
 			.grid
@@ -178,7 +20,7 @@ block content
 								.header__row
 									.header__col
 										svg.icon.icon__logo_primary
-											use(xlink:href='/img/svgSprite.svg#icon__logo_color')
+											use(xlink:href='img/svgSprite.svg#icon__logo_color')
 										nav.header__nav
 											a.header__item(href='#') Products
 											a.header__item(href='#') Pricing
@@ -191,48 +33,50 @@ block content
 											a.btn__link.btn__link_d(href='#') Sing up
 									.header__menu
 										svg.icon.icon__menu
-											use(xlink:href='/img/svgSprite.svg#icon__menu')
+											use(xlink:href='img/svgSprite.svg#icon__menu')
 		.hero__img(id='scene')
 			.hero__prallax(data-depth='0.2')
-				img.hero__img-back(src='/img/img__hero_back.png' alt='')
+				img.hero__img-back(src='img/img__hero_back.png' alt='')
 			.hero__prallax(data-depth='0.5')
-				img.hero__img-front(src='/img/img__hero_front.png' alt='')
+				img.hero__img-front(src='img/img__hero_front.png' alt='')
 		svg.hero__layer
-			use(xlink:href='/img/svgSprite.svg#bg')
+			use(xlink:href='img/svgSprite.svg#bg')
 		svg.hero__bg-logo.hero__bg-logo_top
-			use(xlink:href='/img/svgSprite.svg#bg__logo')
+			use(xlink:href='img/svgSprite.svg#bg__logo')
 		svg.hero__bg-logo.hero__bg-logo_bottom
-			use(xlink:href='/img/svgSprite.svg#bg__logo')
+			use(xlink:href='img/svgSprite.svg#bg__logo')
 
 	.side-nav
 		.side-nav__inner
 			.side-nav__header
 				svg.icon.icon__menu-logo
-					use(xlink:href='/img/svgSprite.svg#icon__logo_color')
+					use(xlink:href='img/svgSprite.svg#icon__logo_color')
 				.side-nav__close
 					svg.icon.icon__close
-						use(xlink:href='/img/svgSprite.svg#icon__close')
-			nav.side-nav__nav
-				a.side-nav__item(href='#') Products
-				a.side-nav__item(href='#') Pricing
-				a.side-nav__item(href='#') FAQ
-				a.side-nav__item(href='#') Blog
-			.side-nav__footer
-				.side-nav__socials
-					a.side-nav__socials-link(href='https://www.facebook.com')
-						svg.icon__socials
-							use(xlink:href='img/svgSprite.svg#icon__fb')
-					a.side-nav__socials-link(href='https://twitter.com')
-						svg.icon__socials
-							use(xlink:href='img/svgSprite.svg#icon__tw')
-					a.side-nav__socials-link(href='https://instagram.com')
-						svg.icon__socials
-							use(xlink:href='img/svgSprite.svg#icon__inst')
-				.side-nav__login
-					.side-nav__btn.side-nav__btn_ghost
-						a.side-nav__link(href='#') Sing in
-					.side-nav__btn.side-nav__btn_bordered
-						a.side-nav__link(href='#') Sing up
+						use(xlink:href='img/svgSprite.svg#icon__close')
+			.side-nav__content-wrapper
+				.side-nav__content
+					nav.side-nav__nav
+						a.side-nav__item(href='#') Products
+						a.side-nav__item(href='#') Pricing
+						a.side-nav__item(href='#') FAQ
+						a.side-nav__item(href='#') Blog
+					.side-nav__footer
+						.side-nav__socials
+							a.side-nav__socials-link(href='httpss://www.facebook.com')
+								svg.icon__socials
+									use(xlink:href='img/svgSprite.svg#icon__fb')
+							a.side-nav__socials-link(href='httpss://twitter.com')
+								svg.icon__socials
+									use(xlink:href='img/svgSprite.svg#icon__tw')
+							a.side-nav__socials-link(href='httpss://instagram.com')
+								svg.icon__socials
+									use(xlink:href='img/svgSprite.svg#icon__inst')
+						.side-nav__login
+							.side-nav__btn.side-nav__btn_ghost
+								a.side-nav__link(href='#') Sing in
+							.side-nav__btn.side-nav__btn_bordered
+								a.side-nav__link(href='#') Sing up
 
 	section.main-features
 		.main-features__header
@@ -306,9 +150,9 @@ block content
 
 	footer.footer
 		svg.footer__layer
-			use(xlink:href='/img/svgSprite.svg#bg')
+			use(xlink:href='img/svgSprite.svg#bg')
 		svg.footer__bg-logo
-			use(xlink:href='/img/svgSprite.svg#bg__logo')
+			use(xlink:href='img/svgSprite.svg#bg__logo')
 		.footer__inner
 			.grid
 				.grid__row
@@ -349,27 +193,20 @@ block content
 						.grid__col.grid__col_lg-12
 							.footer__row
 								svg.icon.icon__logo_primary
-									use(xlink:href='/img/svgSprite.svg#icon__logo_grey')
+									use(xlink:href='img/svgSprite.svg#icon__logo_grey')
 								nav.footer__nav
 									a.footer__item(href='#') Products
 									a.footer__item(href='#') Pricing Plans
 									a.footer__item(href='#') FAQ
 									a.footer__item(href='#') Blog
 								.footer__socials
-									a.footer__socials-link(href='htts://twitter.com')
+									a.footer__socials-link(href='https://twitter.com')
 										svg.icon.icon__socials
 											use(xlink:href='img/svgSprite.svg#icon__fb')
-									a.footer__socials-link(href='htts://instagram.com')
+									a.footer__socials-link(href='https://instagram.com')
 										svg.icon.icon__socials
 											use(xlink:href='img/svgSprite.svg#icon__tw')
-									a.footer__socials-link(href='htts://instagram.com')
+									a.footer__socials-link(href='https://instagram.com')
 										svg.icon.icon__socials
 											use(xlink:href='img/svgSprite.svg#icon__inst')
 	.page__darker
-	//section.section.section__first
-			svg.section__layer.section__layer_hero
-				use(xlink:href='/img/svgSprite.svg#bg')
-	//section.section.section__second
-	//footer.section.section__third
-			svg.section__layer.section__layer_footer
-				use(xlink:href='/img/svgSprite.svg#bg')
