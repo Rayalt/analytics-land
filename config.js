@@ -7,7 +7,6 @@ let config = {
 	],
 	'alwaysAddBlocks': [],
 	'addStyleBefore': [
-		'normalize.css/normalize.css',
 		'dev/scss/variables.scss',
 		'dev/scss/mixins.scss',
 		'dev/scss/vendor.scss',
